@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>数据展示</title>
+    
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/selectFilter.css" />
+ 
+
+  </head>
+  <body>
+   
+     </div>
+    <div class="container">
+     
+      <div class="form">
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">信息获取</h3>
+            <!-- 这里开始 -->
+
+            <div class="filter-box">
+              <div class="filter-text">
+                <input
+                  class="filter-title"
+                  type="text"
+                  placeholder="请选择"
+                  disabled
+                />
+                <i class="icon icon-filter-arrow"></i>
+              </div>
+              <select name="filter">
+                <option value="sceneryTourTime">景区游览时间分布</option>
+                <option value="citySceneryTourTime">游客在各城的不同景区的游览时间</option>
+                <option value="passengerFlow">旅游信息</option>
+                <option value="volumeRanking">景区游览量排名</option>
+              </select>
+            </div>
+
+            <!-- 这里结束 -->
+            <div class="input-container" id="uid">
+              <input type="text" class="input" value="1302121170941906944" />
+              <label for="">UserID</label>
+              <span>UserID</span>
+            </div>
+          
+            <div class="input-container" id="sName">
+              <input type="text" class="input" value="德天跨国瀑布景区"/>
+              <label for="">SceneryName</label>
+              <span>SceneryName</span>
+            </div>
+
+            <div class="input-container" id="sTime" >
+              <input type="text" class="input" value="2020-09-05 12:00:00"/>
+              <label for="">StartTime</label>
+              <span>StartTime</span>
+            </div>
+
+            <div class="input-container" id="eTime">
+              <input type="text" class="input" value="2020-09-05 23:59:59"/>
+              <label for="">EndTime</label>
+              <span>EndTime</span>
+            </div>
+        
+            <input type="button" value="查询" class="btn" id="btn" />
+          </form>
+        </div>
+        <div class="contact-info" id="text"> 
+           
+        </div>
+
+        
+      </div>
+    </div>
+  
+   
+   
+   
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"></script>
+    <script type="text/javascript" src="js/selectFilter.js"></script>
+    <script src="js/springy.js"></script>
+    <script src="js/springyui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
